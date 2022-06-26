@@ -5,7 +5,7 @@ const port: any = process.env.PORT ?? process.env.$PORT ?? 3000;
 server
 	.listen({
 		port: port,
-		host: '127.0.0.1',
+		host: '0.0.0.0',
 	})
 	.catch((err) => {
 		server.log.error(err);
